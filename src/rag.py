@@ -8,13 +8,13 @@ from dataclasses import dataclass
 
 from sarvamai import SarvamAI
 
-from src.config import (
+from .config import (
     SARVAM_MAX_TOKENS,
     SARVAM_MODEL,
     SARVAM_REASONING_EFFORT,
     TOP_K,
 )
-from src.store import SearchHit, search
+from .store import SearchHit, search
 
 SYSTEM_PROMPT = """You are "Ask Bhavin", a helpful assistant that answers questions about Bhavin Sen (software engineer, @bhavinsen on GitHub, @senbhavin on Freelancer).
 

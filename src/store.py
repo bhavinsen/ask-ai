@@ -10,7 +10,7 @@ from pathlib import Path
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-from src.config import INDEX_DIR
+from .config import INDEX_DIR
 
 
 @dataclass

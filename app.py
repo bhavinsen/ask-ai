@@ -3,6 +3,13 @@
 from __future__ import annotations
 
 import os
+import sys
+from pathlib import Path
+
+# Streamlit Cloud mounts repos under /mount/src/<repo>; ensure project root wins on sys.path.
+_ROOT = Path(__file__).resolve().parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
 
 import streamlit as st
 from dotenv import load_dotenv

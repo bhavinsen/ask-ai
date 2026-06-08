@@ -6,8 +6,8 @@ from pathlib import Path
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from src.config import CHUNK_OVERLAP, CHUNK_SIZE, DATA_DIR
-from src.store import IndexedChunk, save_index
+from .config import CHUNK_OVERLAP, CHUNK_SIZE, DATA_DIR
+from .store import IndexedChunk, save_index
 
 
 def load_documents(data_dir: Path = DATA_DIR) -> list[tuple[str, str, str]]:
